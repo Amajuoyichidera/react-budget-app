@@ -1,7 +1,7 @@
-/* App.css */
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ h1 {
 .budget {
   background-color: #4caf50;
   color: #fff;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -36,26 +36,24 @@ h1 {
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  outline: none;
+  margin-bottom: 20px;
 }
-
 
 .expense-input {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; 
   align-items: center;
   margin-bottom: 20px;
 }
 
 .expense-input input[type="text"],
 .expense-input input[type="number"] {
-  flex: 1;
+  width: 100%; 
   padding: 10px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  margin-right: 10px;
-  border: 2px solid black;
+  margin-bottom: 10px; 
 }
 
 .expense-input button {
@@ -100,4 +98,21 @@ h1 {
   padding: 5px 10px;
   font-size: 14px;
   cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px; 
+  }
+
+  .expense-input {
+    flex-direction: column; 
+  }
+
+  .expense-input input[type="text"],
+  .expense-input input[type="number"] {
+    margin-right: 0;
+    width: 90%;
+  }
 }
