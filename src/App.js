@@ -8,6 +8,7 @@ function App() {
   const [expenses, setExpenses] = useState([]);
 
 
+
   const addExpense = () => {
     if (expense.trim() === "" || isNaN(amount) || parseFloat(amount) <= 0) {
       return;
@@ -24,6 +25,7 @@ function App() {
     setExpense("");
     setAmount("");
   };
+
 
 
   const deleteExpense = (id) => {
@@ -82,6 +84,7 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
 
